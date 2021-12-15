@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="justify-content-center align-items-center minh-100 row">
+            <div class="container-primary rounded">
+                <h4>Formulario</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="input-name">Correo electrónico</label>
+                        <input type="text" class="form-control" id="input-name" placeholder="Nombre">
+                        <small id="help-name" class="text-danger d-none">Nombre debe tener como mínimo 3 carácteres.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-mail">Correo electrónico</label>
+                        <input type="email" class="form-control" id="input-mail" placeholder="you@mail.com">
+                        <small id="help-mail" class="text-danger d-none">Correo electrónico inválido.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-password">Contraseña</label>
+                        <input type="password" class="form-control" id="input-password" placeholder="Contraseña">
+                        <small id="help-password" class="text-danger d-none">Contraseña debe tener mínimo 8 carácteres, una letra mayúscula, una minúscula y un número.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-password2">Repetir contraseña</label>
+                        <input type="password" class="form-control" id="input-password2" placeholder="Repetir contraseña">
+                        <small id="help-password2" class="text-danger d-none">Las contraseñas no coinciden.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onClick="validator();return false;">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Archivo de scripts -->
+<script src="./scripts/main.js"></script>
+<!-- jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</html>
